@@ -1,30 +1,23 @@
 #top-header {
   background: rebeccapurple;
-  height: 300px;
+  height: 100px;
 }
-/* #buttom-header {
-  background: teal;
-  height: 300px;
-} */
-main {
-  background: rosybrown;
-  height: 500px;
-}
-footer {
-  background: turquoise;
-  height: 400px;
-}
+
 /* styling the header */
 #buttom-header {
   display: flex;
   justify-content: space-around;
-  padding: 30px;
+  padding: 20px;
+  /* position: fixed; */
+}
+nav li {
+  list-style-type: none;
 }
 #h-menu {
   background: yellow;
   position: relative;
   display: flex;
-  list-style-type: none;
+  /* list-style-type: none; */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 15pt;
   direction: rtl;
@@ -37,24 +30,25 @@ footer {
   background: yellowgreen;
   display: none;
   position: absolute;
-  width: 100px;
+  width: 300px;
   height: 150px;
   left: 80px;
 }
-.v-menu:hover {
-  display: list-item;
+#h-menu li:hover .v-menu {
+  display: block;
+}
+.v-menu li:hover .v-sub-menu {
+  display: block;
 }
 .v-sub-menu {
   background: coral;
   display: none;
-  width: 50px;
+  width: 250px;
   height: 150px;
   position: absolute;
 }
-.v-sub-menu:hover {
-  display: block;
-}
-button {
+
+#buttom-header > button {
   background: orange;
   color: white;
   padding: 5px;
@@ -69,4 +63,47 @@ button {
 nav > img {
   width: 70px;
   height: 70px;
+}
+/* the main section */
+main {
+  display: flex;
+  direction: rtl;
+  justify-content: space-around;
+  align-items: center;
+  direction: rtl;
+  padding: 50px 150px;
+}
+#img1,
+#img3 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+#img2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+#right-main h2 {
+  margin: 0;
+  font-size: 18pt;
+  width: 40%;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+#right-main p {
+  width: 60%;
+  font-size: 13pt;
+  line-height: 1.5;
+  margin: 0%;
+  margin-top: 30px;
+}
+#btn1 {
+  background: lightblue;
+  color: blue;
+}
+#btn2 {
+  background: blue;
+  color: white;
+  margin-top: 30px;
 }
