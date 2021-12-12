@@ -1,0 +1,72 @@
+#top-header {
+  background: rebeccapurple;
+  height: 300px;
+}
+/* #buttom-header {
+  background: teal;
+  height: 300px;
+} */
+main {
+  background: rosybrown;
+  height: 500px;
+}
+footer {
+  background: turquoise;
+  height: 400px;
+}
+/* styling the header */
+#buttom-header {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+#h-menu {
+  background: yellow;
+  position: relative;
+  display: flex;
+  list-style-type: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15pt;
+  direction: rtl;
+}
+#h-menu a {
+  margin: 10px;
+  text-decoration: none;
+}
+.v-menu {
+  background: yellowgreen;
+  display: none;
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  left: 80px;
+}
+.v-menu:hover {
+  display: list-item;
+}
+.v-sub-menu {
+  background: coral;
+  display: none;
+  width: 50px;
+  height: 150px;
+  position: absolute;
+}
+.v-sub-menu:hover {
+  display: block;
+}
+button {
+  background: orange;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14pt;
+  height: 50px;
+  width: 100px;
+  border: none;
+}
+nav > img {
+  width: 70px;
+  height: 70px;
+}
