@@ -1,20 +1,24 @@
 #top-header {
-  background: rebeccapurple;
-  height: 100px;
+  background: rgb(143, 142, 145);
+  height: 80px;
 }
 
 /* styling the header */
 #buttom-header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 20px;
-  /* position: fixed; */
+  position: fixed;
+  width: 90%;
+  /* margin: 50px auto; */
+  z-index: 150;
+  /* height: 100px; */
 }
 nav li {
   list-style-type: none;
 }
 #h-menu {
-  background: yellow;
+  background: white;
   position: relative;
   display: flex;
   /* list-style-type: none; */
@@ -27,12 +31,19 @@ nav li {
   text-decoration: none;
 }
 .v-menu {
-  background: yellowgreen;
+  background: white;
   display: none;
   position: absolute;
-  width: 300px;
-  height: 150px;
-  left: 80px;
+  width: 150px;
+  height: 200px;
+  left: 250px;
+  top: 25px;
+}
+.v-menu li {
+  list-style-type: none;
+  font-size: 13pt;
+  font-family: sans-serif;
+  padding: 5px;
 }
 #h-menu li:hover .v-menu {
   display: block;
@@ -41,11 +52,14 @@ nav li {
   display: block;
 }
 .v-sub-menu {
-  background: coral;
+  background: white;
   display: none;
-  width: 250px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   position: absolute;
+  top: 0;
+  left: -100px;
+  padding: 5px;
 }
 
 #buttom-header > button {
@@ -70,40 +84,79 @@ main {
   direction: rtl;
   justify-content: space-around;
   align-items: center;
-  direction: rtl;
-  padding: 50px 150px;
+  padding: 50px 200px;
+  margin: 180px 0;
+}
+/* the left division of the main section */
+#left-main {
+  position: relative;
+  width: 50%;
+}
+#left-main img {
+  position: absolute;
+  border-radius: 50%;
 }
 #img1,
 #img3 {
   width: 70px;
   height: 70px;
-  border-radius: 50%;
+  z-index: 100;
+}
+#img1 {
+  top: 45px;
+  left: 50px;
+}
+#img3 {
+  top: -60px;
+  right: -10px;
 }
 #img2 {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  right: -20px;
+  bottom: -170px;
 }
+/* the right division of the main section */
 #right-main h2 {
-  margin: 0;
+  /* margin: 0; */
   font-size: 18pt;
-  width: 40%;
+  width: 55%;
   line-height: 1.5;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 #right-main p {
-  width: 60%;
+  width: 70%;
   font-size: 13pt;
   line-height: 1.5;
-  margin: 0%;
-  margin-top: 30px;
+  /* margin: 0%; */
+  /* margin-top: 30px; */
+}
+#right-main h2,
+#right-main p {
+  margin: 20px 0;
 }
 #btn1 {
   background: lightblue;
   color: blue;
+  border: none;
+  margin-right: 120px;
+  font-size: 11pt;
+  font-family: sans-serif;
+  padding: 7px;
+  border-radius: 5px;
 }
 #btn2 {
   background: blue;
   color: white;
-  margin-top: 30px;
+  border: none;
+  padding: 8px;
+  font-size: 13pt;
+  font-family: auto;
+  border-radius: 5px;
+}
+/* scroll test section */
+#scroll-test {
+  background: crimson;
+  height: 1000px;
+  padding: 50%;
 }
