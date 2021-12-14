@@ -14,11 +14,8 @@ body {
   padding: 20px;
   position: fixed;
   width: 98%;
-  /* margin: 50px auto; */
   z-index: 150;
-  /* height: 100px; */
   background: white;
-  /* top: 0; */
   box-shadow: 2px 3px 6px 0 #00000026;
 }
 nav li {
@@ -28,10 +25,8 @@ nav li {
   background: white;
   position: relative;
   display: flex;
-  /* list-style-type: none; */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 15pt;
-  direction: rtl;
 }
 #h-menu a {
   margin: 10px;
@@ -55,9 +50,6 @@ nav li {
 #h-menu li:hover .v-menu {
   display: block;
 }
-.v-menu li:hover .v-sub-menu {
-  display: block;
-}
 .v-sub-menu {
   background: white;
   display: none;
@@ -68,7 +60,9 @@ nav li {
   left: -100px;
   padding: 5px;
 }
-
+.v-menu li:hover .v-sub-menu {
+  display: block;
+}
 #buttom-header > button {
   background: orange;
   color: white;
@@ -86,9 +80,8 @@ nav > img {
   height: 70px;
 }
 /* the main section */
-main {
+#main-section {
   display: flex;
-  direction: rtl;
   justify-content: space-around;
   align-items: center;
   padding: 50px 200px;
@@ -125,18 +118,14 @@ main {
 }
 /* the right division of the main section */
 #right-main h2 {
-  /* margin: 0; */
   font-size: 18pt;
   width: 55%;
   line-height: 1.5;
-  /* margin-top: 20px; */
 }
 #right-main p {
   width: 70%;
   font-size: 13pt;
   line-height: 1.5;
-  /* margin: 0%; */
-  /* margin-top: 30px; */
 }
 #right-main h2,
 #right-main p {
@@ -151,6 +140,7 @@ main {
   font-family: sans-serif;
   padding: 7px;
   border-radius: 5px;
+  cursor: pointer;
 }
 #btn2 {
   background: blue;
@@ -160,6 +150,7 @@ main {
   font-size: 13pt;
   font-family: auto;
   border-radius: 5px;
+  cursor: pointer;
 }
 /* scroll test section */
 #scroll-test {
