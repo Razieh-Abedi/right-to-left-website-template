@@ -5,6 +5,8 @@ body {
 #top-header {
   background: rgb(143, 142, 145);
   height: 80px;
+  padding: 10px;
+  text-align: center;
 }
 
 /* styling the header */
