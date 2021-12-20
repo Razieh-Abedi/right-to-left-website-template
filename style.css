@@ -30,7 +30,6 @@ nav li {
   display: flex;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 15pt;
-  /* box-shadow: 0 0 6px 2px #00000026; */
   padding: 10px;
 }
 #h-menu a {
