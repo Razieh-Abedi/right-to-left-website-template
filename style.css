@@ -90,8 +90,9 @@ nav > img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 50px 200px;
-  margin: 180px 0;
+  padding: 50px 200px 35px;
+  margin: 140px 0;
+  margin-bottom: 0;
 }
 /* the left division of the main section */
 #left-main {
@@ -158,6 +159,47 @@ nav > img {
   border-radius: 5px;
   cursor: pointer;
 }
+/* digikala section */
+#logo-sec {
+  padding: 30px 90px 0;
+  line-height: 2;
+}
+#logo-sec > div {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+#logo-sec a {
+  text-decoration: none;
+  color: black;
+}
+#logo-sec > img {
+  width: 130px;
+  height: 70px;
+}
+#digi-kala-imgs {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 50px;
+  flex-wrap: wrap;
+}
+.digi-img {
+  width: 50px;
+  height: 50px;
+}
+#digi-kala-imgs a {
+  text-decoration: none;
+  width: 150px;
+  text-align: center;
+  line-height: 1.8;
+  margin: 10px;
+}
+.digi-text {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11pt;
+}
+
 /* scroll test section */
 #scroll-test {
   background: crimson;
