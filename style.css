@@ -201,29 +201,67 @@ nav > img {
 }
 /* background section */
 #background {
-  height: 700px;
-  background: yellow;
   display: flex;
   justify-content: space-evenly;
+  padding: 40px;
+  height: 600px;
 }
-#right-background {
-  background-image: url(images/background-pic.jpg);
+#right-background,
+#left-background {
   background-size: cover;
   background-position: center;
   width: 40%;
   background-repeat: no-repeat;
+  text-align: left;
+  border-radius: 4%;
+  box-shadow: 0 0 8px 5px #0d0d0d26;
+  z-index: 200;
+}
+
+#right-background {
+  background-image: url(images/background-pic.jpg);
+}
+
+#right-background h1,
+#right-background h4 {
+  margin: 50px auto;
+  padding: 50px 80px 50px 20px;
+  padding-left: 20px;
+  line-height: 1.5;
+  width: 40%;
+  font-family: system-ui;
+  color: #849871;
+}
+#left-background h1,
+#left-background h4 {
+  padding: 150px 80px 50px 20px;
+  padding-left: 20px;
+  width: 50%;
+  font-family: system-ui;
+  color: #ff084c;
 }
 #left-background {
   background-image: url("images/background-pic2.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 40%;
-  background-repeat: no-repeat;
 }
-
-/* scroll test section */
-#scroll-test {
-  background: crimson;
-  height: 1000px;
-  padding: 50%;
+#smile {
+  text-align: center;
+}
+#smile > div {
+  background-image: url(images/smily-face.jpg);
+  background-color: #c4d5d8;
+  height: 400px;
+  border-radius: 4%;
+  box-shadow: 0 0 8px 5px #0d0d0d26;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  width: 50%;
+  margin: 20px auto;
+  background-position: 30px 220px;
+  z-index: 200;
+}
+#smile > div > h1 {
+  padding: 50px;
+}
+#smile > div > p {
+  padding: 40px;
 }
