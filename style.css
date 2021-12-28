@@ -265,3 +265,12 @@ nav > img {
 #smile > div > p {
   padding: 40px;
 }
+.mapouter {
+  margin: 20px auto;
+}
+#christmas {
+  height: 500px;
+  width: 800px;
+  margin: 30px auto;
+  display: block;
+}
