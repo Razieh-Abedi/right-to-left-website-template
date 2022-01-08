@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>irisa website template</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/CSS/style.css" />
   </head>
   <body>
     <header>
       <div id="top-header">This is top header</div>
       <div id="buttom-header">
-        <img src="images/irisa-logo.PNG" alt="irisa logo" />
+        <img src="assets/images/irisa-logo.PNG" alt="irisa logo" />
         <nav>
           <ul id="h-menu">
             <li><a href="">صفحه اصلی</a></li>
@@ -55,14 +55,14 @@
           <button id="btn2">همه محصولات</button>
         </div>
         <div id="left-main">
-          <img src="images/icon1.png" alt="an icon" id="img1" />
-          <img src="images/irisa-logo.PNG" alt="irisa logo" id="img2" />
-          <img src="images/icon2.png" alt="an icon" id="img3" />
+          <img src="assets/images/icon1.png" alt="an icon" id="img1" />
+          <img src="assets/images/irisa-logo.PNG" alt="irisa logo" id="img2" />
+          <img src="assets/images/icon2.png" alt="an icon" id="img3" />
         </div>
       </section>
       <section id="digi-kala">
         <div id="logo-sec">
-          <img src="images/digi-kala-logo.svg" alt="digi kala logo" />
+          <img src="assets/images/digi-kala-logo.svg" alt="digi kala logo" />
           <div>
             <span>تلفن پشتیبانی</span>
             <span><a href="">021-61930000</a></span>
@@ -77,7 +77,7 @@
             <div>
               <img
                 class="digi-img"
-                src="images/express-delivery.svg"
+                src="assets/images/express-delivery.svg"
                 alt="express delievry sign"
               />
             </div>
@@ -85,7 +85,11 @@
           </a>
           <a href="">
             <div>
-              <img class="digi-img" src="images/COD.svg" alt="COD sign" />
+              <img
+                class="digi-img"
+                src="assets/images/COD.svg"
+                alt="COD sign"
+              />
             </div>
             <div><span class="digi-text">امکان پرداخت در محل</span></div>
           </a>
@@ -93,7 +97,7 @@
             <div>
               <img
                 class="digi-img"
-                src="images/work-24-7.svg"
+                src="assets/images/work-24-7.svg"
                 alt="express delievry sign"
               />
             </div>
@@ -103,7 +107,7 @@
             <div>
               <img
                 class="digi-img"
-                src="images/return-garantee.svg"
+                src="assets/images/return-garantee.svg"
                 alt="express delievry sign"
               />
             </div>
@@ -113,7 +117,7 @@
             <div>
               <img
                 class="digi-img"
-                src="images/originality-garantee.svg"
+                src="assets/images/originality-garantee.svg"
                 alt="express delievry sign"
               />
             </div>
@@ -141,6 +145,7 @@
         </div>
       </section>
       <section id="media">
+        <!--google map-->
         <div class="mapouter">
           <div class="gmap_canvas">
             <iframe
@@ -150,20 +155,21 @@
               scrolling="no"
               marginheight="0"
               marginwidth="0"
-            ></iframe
-            ><a href="https://123movies-to.org">123movies</a><br /><a
-              href="https://www.embedgooglemap.net"
-              >free goggle map</a
-            >
+            ></iframe>
+            <a href="https://123movies-to.org">123movies</a>
+            <a href="https://www.embedgooglemap.net">free goggle map</a>
           </div>
         </div>
+        <!--external webpage embedding-->
         <div>
           <iframe
             id="christmas"
             src="https://en.wikipedia.org/wiki/Christmas"
             frameborder="0"
-          ></iframe>
+          >
+          </iframe>
         </div>
+        <!--youtube video embedding-->
         <div id="youtube1">
           <iframe
             src="https://www.youtube.com/embed/L5jI9I03q8E"
@@ -173,31 +179,48 @@
             allowfullscreen
           ></iframe>
         </div>
+
         <div id="youtube2">
-          <video controls autoplay muted>
+          <iframe
+            src="https://www.youtube.com/embed/yWrfEclkC_k"
+            frameborder="0"
+          ></iframe>
+        </div>
+
+        <!--aparat video embed-->
+        <div id="aparat1">
+          <iframe src="https://www.aparat.com/v/2wyiM" frameborder="0"></iframe>
+        </div>
+
+        <div id="aparat2">
+          <div class="h_iframe-aparat_embed_frame">
+            <span></span>
+            <iframe
+              src="https://www.aparat.com/video/video/embed/videohash/JQMsu/vt/frame?recom=none&startTime=7"
+              allowfullscreen="true"
+              webkitallowfullscreen="true"
+              mozallowfullscreen="true"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!--video and audio elements-->
+        <div id="nature-video">
+          <video id="nature" controls autoplay muted>
             <source src="assets/videos/nature.mp4" type="video/mp4" />
+            <source src="" type="video/webm" />
           </video>
         </div>
+
         <div id="audio">
-          <audio controls autoplay muted>
+          <audio id="Zaz-song" controls autoplay muted>
             <source
               src="assets/audios/01.Zaz-Les_Passants.mp3"
               type="audio/mp3"
             />
             <source src="assets/audios/Track-1.wma" type="audio/wma" />
           </audio>
-        </div>
-        <div id="aparat">
-          <div class="h_iframe-aparat_embed_frame">
-            <span></span
-            ><iframe
-              src="https://www.aparat.com/video/video/embed/videohash/aZ8E2/vt/frame?recom=none"
-              allowfullscreen="true"
-              webkitallowfullscreen="true"
-              mozallowfullscreen="true"
-            ></iframe>
-          </div>
-          <iframe src="" frameborder="0"></iframe>
         </div>
       </section>
     </main>
