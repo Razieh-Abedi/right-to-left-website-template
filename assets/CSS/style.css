@@ -214,7 +214,6 @@ body {
 /* youtube video embed */
 #youtube1,
 #youtube2,
-#aparat1,
 #aparat2,
 #nature-video,
 #audio {
@@ -223,18 +222,12 @@ body {
 }
 #youtube1 iframe,
 #youtube2 iframe,
-#aparat1 iframe,
 #aparat2 iframe {
   width: 600px;
   height: 315px;
 }
 
 /* aparat video embed */
-/* aparat1 */
-#aparat1 {
-  width: 500px;
-}
-
 /* aparat2 */
 .h_iframe-aparat_embed_frame {
   position: relative;
